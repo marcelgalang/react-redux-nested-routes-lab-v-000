@@ -12,7 +12,7 @@
     "debug-ide": "./bin/debug-ide",
     "test": "mocha -R mocha-multi --reporter-options nyan=-,json=.results.json",
     "test:watch": "npm run test -- --watch",
-    "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js"
+    "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js --history-api-fallback"
   },
   "repository": {
     "type": "git",
