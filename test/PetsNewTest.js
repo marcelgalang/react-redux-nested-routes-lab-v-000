@@ -1,6 +1,6 @@
 import React from 'react';
 import expect from 'expect';
-import sinon from 'sinon';
+
 import {mount} from 'enzyme';
 import store from '../src/configureStore';
 import FakeProvider from './FakeProvider';
