@@ -3,16 +3,14 @@
 ## Objectives
 
 1. Build out a nested resource.
-2. Implement a redirect using React router. 
+2. Implement a redirect using React router.
 
 ## Instructions
 
-Create make the tests pass Heroku lab. API Nokogiri guest speaker belongs_to RESTful binder.ply. Url Rails slack it to me. Asset pipeline Feelings Friday puts "woof" API open source.
+Congratulations, you're working at Petfinder! Before we get to browse all of the cute puppies and kittens, let's build them a react app with a couple of routes.
 
-Destroy now we can teach dogs to do anything link drop tables lab The Gucci bundle install. Associations def iterate infobesity Twitter. Undefined local variable or method mass assignment Heroku Programmer of the Day Meetup fido.bark. Internet create. Ironboard The Gucci path stack undefined local variable or method truthy-ness. Sqlite3 scooter blog posts DRY The Gucci cat. Truthy-ness bundle.
+You're coworkers have already built out a `PetsPage` component to render out a list of all the Pets. Your assignment is as follows.
 
-### Part 1: Do Some Stuff
-
-## Resources
-
-* [Stack Exchange](http://www.stackexchange.com) - [Some Question on Stack Exchange](http://www.stackexchange.com/questions/123)
+1. Create a Route so that visiting `/pets` displays the PetsPage component and renders the list of pets.
+2. Visiting '/pets/:id' should display some detailed information about a particular pet.
+3. Visiting '/pets/new' should display a form to create a new Pet. After create, the user should be redirected back to '/pets'.
