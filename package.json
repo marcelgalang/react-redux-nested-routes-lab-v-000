@@ -41,6 +41,7 @@
     "jsdom": "^9.4.1",
     "mocha": "^3.0.1",
     "mocha-multi": "^0.9.1",
+    "nightwatch": "^0.9.8",
     "node-inspector": "^0.12.8",
     "react-addons-test-utils": "^15.3.2",
     "sinon": "^1.17.6",
