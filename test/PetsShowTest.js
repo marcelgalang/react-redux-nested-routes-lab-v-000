@@ -9,15 +9,13 @@ describe('PetsShow', function(){
 
   it('renders the pets show component', function(){
     const wrapper = mount(<FakeProvider>< PetsShow routeParams={{id: 1}} /></FakeProvider>);
-    const show = wrapper.children();
-    expect(show.first().type()).toEqual('h2', 'Pets show should have an h2 with the pets name');
-    expect(show.first().text()).toEqual('Grover');
+    expect(wrapper.find('h2').length).toEqual(1, 'Pets show should have an h2 with the pets name');
+    expect(wrapper.find('h2').text()).toEqual('Grover');
   })
 
   it('finds the pet by the route ID', function(){
     const wrapper = mount(<FakeProvider>< PetsShow routeParams={{id: 2}} /></FakeProvider>);
-    const show = wrapper.children();
-    expect(show.first().type()).toEqual('h2');
+    expect(wrapper.find('h2').length).toEqual(1, 'The name should be based on the id of the pet');
     expect(show.first().text()).toEqual('Fido');
   })
 
