@@ -1,7 +1,7 @@
 export default (state = [], action) => {
   switch (action.type) {
 
-    case 'FETCH_PETS_SUCCESSFUL':
+    case 'FETCH_PETS':
       return action.pets;
 
     case 'ADD_PET':
