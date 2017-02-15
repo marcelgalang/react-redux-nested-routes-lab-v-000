@@ -3,4 +3,4 @@ import petsReducer from './petsReducer';
 
 export default combineReducers({
   pets: petsReducer
-})
+});
