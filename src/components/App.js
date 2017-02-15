@@ -7,5 +7,6 @@ export default (props) => {
     <div>
       <NavBar title="See All The Pets!" href="/pets"/>
       { props.children }
-    </div>)
+    </div>
+  )
 };

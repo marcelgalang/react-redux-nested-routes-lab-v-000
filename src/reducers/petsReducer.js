@@ -1,11 +1,14 @@
-export default (state=[], action) => {
+export default (state = [], action) => {
   switch (action.type) {
+
     case 'FETCH_PETS':
-      return action.payload;
+      return action.pets;
+
     case 'ADD_PET':
-      const pet = Object.assign({}, action.payload, {id: state.length + 1})
-      return [...state, pet]
+      const pet = Object.assign({}, action.pet, { id: state.length + 1} );
+      return [ ...state, pet ];
+
     default:
       return state;
   }
-}
+};

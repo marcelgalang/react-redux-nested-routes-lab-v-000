@@ -1,15 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-
 import store from './configureStore';
-import {Provider} from 'react-redux';
-
+import { Provider } from 'react-redux';
 import { Router, Route, browserHistory } from 'react-router';
-
 import App from './components/App';
 import PetsPage from './containers/PetsPage';
-import PetsShow from './containers/PetsShow';
-import PetsNew from './containers/PetsNew';
+import PetsNew from './containers/Petsnew';
+import PetsShow from './containers/Petsshow';
 
 ReactDOM.render(
   <Provider store={store}>
@@ -22,4 +19,5 @@ ReactDOM.render(
       </Route>
     </Router>
   </Provider>,
-  document.getElementById('container'))
+  document.getElementById('container')
+);
