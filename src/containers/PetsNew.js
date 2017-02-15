@@ -8,7 +8,7 @@ class PetsNew extends Component {
 
   constructor(props) {
     super(props);
-    this.setState = {
+    this.state = {
       name: '', 
       description: '',
     };
@@ -16,6 +16,7 @@ class PetsNew extends Component {
 
   handleOnSubmit(event) {
     event.preventDefault();
+    console.log(this.state);
     this.props.addPet(this.state);
     browserHistory.push('/pets');
   }
