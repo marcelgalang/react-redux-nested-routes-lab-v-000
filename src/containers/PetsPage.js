@@ -21,6 +21,7 @@ class PetsPage extends Component {
             <li key={pet.id}>
              <Link to={`/pets/${pet.id}`}>{ pet.name }</Link></li>)}
         </ul>
+        <Link to="/pets/new">Add a Pet</Link>
       </div>
 
       { this.props.children }
